@@ -1,0 +1,22 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply text-center p-5 bg-slate-200 hover:shadow-button-white focus:shadow-button-white hover:text-slate-200 hover:bg-red-600 focus:bg-red-600 focus:text-slate-200 rounded;
+  }
+  .button2 {
+    @apply bg-slate-200  text-xl text-red-600  shadow-2xl font-bold py-2 px-4 rounded;
+  }
+  .mainContainer {
+    @apply flex flex-col h-screen items-center justify-center mx-auto;
+  }
+  .shadow-button-white {
+    @apply shadow-[5px_5px_0_rgb(226,232,240)];
+  }
+  .shadow-button {
+  @apply shadow-[5px_5px_0_rgb(220,38,38)];
+}
+}
